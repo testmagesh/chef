@@ -1,0 +1,12 @@
+#
+# Cookbook:: file_test2
+# Recipe:: default
+#
+# Copyright:: 2021, The Authors, All Rights Reserved.
+file 'tmp/welcome.txt' do
+  owner 'root'
+  group 'root'
+  mode '0644'
+  content 'hello guys this is dummy file'
+  action :create
+end
