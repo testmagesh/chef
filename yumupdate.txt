@@ -1,0 +1,9 @@
+#
+# Cookbook:: yumupdate
+# Recipe:: default
+#
+# Copyright:: 2021, The Authors, All Rights Reserved.
+execute 'update' do
+  command 'yum update -y'
+  action :run
+end
